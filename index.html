@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitch Chat & DonateX Flip Widget</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./tmi.min.js"></script>
+</head>
+<body>
+    <div class="scene">
+        <div class="card" id="widget-card">
+            <!-- Лицевая сторона: Чат -->
+            <div class="card-face card-front">
+                <div id="chat-messages"></div>
+            </div>
+
+            <!-- Обратная сторона: Топ донатеров -->
+            <div class="card-face card-back">
+                <div class="top-header" id="top-title">Топ за месяц</div>
+                <div id="donators-list">
+                    <div class="status-msg">Загрузка топа...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
