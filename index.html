@@ -14,16 +14,27 @@
                 <div id="chat-messages"></div>
             </div>
 
-            <!-- Обратная сторона: Топ донатеров -->
+            <!-- Обратная сторона: Топ донатеров и полоска сбора -->
             <div class="card-face card-back">
                 <div class="top-header" id="top-title">Топ за месяц</div>
                 <div id="donators-list">
                     <div class="status-msg">Загрузка топа...</div>
                 </div>
+
+                <!-- Полоска сбора средств -->
+                <div class="goal-container" id="goal-container" style="display: none;">
+                    <div class="goal-header">
+                        <span class="goal-name" id="goal-name"></span>
+                        <span class="goal-stats" id="goal-stats"></span>
+                    </div>
+                    <div class="goal-bar-bg">
+                        <div class="goal-bar-fill" id="goal-bar-fill"></div>
+                        <span class="goal-percent" id="goal-percent"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="config.js"></script>
     <script src="api.js"></script>
     <script src="app.js"></script>
